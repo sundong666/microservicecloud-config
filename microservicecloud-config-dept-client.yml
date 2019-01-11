@@ -1,4 +1,4 @@
-spring: 
+锘縮pring: 
   profiles:
     active:
     - dev
@@ -15,12 +15,12 @@ mybatis:
 
 spring:
   application:
-    name: microservicecloud-config-dept-client    #对外暴露的集群服务名称要统一
+    name: microservicecloud-config-dept-client    #瀵瑰鏆撮湶鐨勯泦缇ゆ湇鍔″悕绉拌缁熶竴
   profiles: dev
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    #driver-class-name: com.mysql.jdbc.Driver
-    driver-class-name: org.gjt.mm.mysql.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    #driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://localhost:3306/clouddb01?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
@@ -36,7 +36,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: microservicecloud-config-dept-client-dept8001
-    prefer-ip-address: true   #显示ip地址
+    prefer-ip-address: true   #鏄剧ずip鍦板潃
 
 info:
   app.name: asiainfo-microservicecloud
@@ -57,13 +57,13 @@ mybatis:
 
 spring:
   application:
-    name: microservicecloud-config-dept-client    #对外暴露的集群服务名称要统一
-  profiles: dev
+    name: microservicecloud-config-dept-client    #瀵瑰鏆撮湶鐨勯泦缇ゆ湇鍔″悕绉拌缁熶竴
+  profiles: test
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    #driver-class-name: com.mysql.jdbc.Driver
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/clouddb01?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    #driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/clouddb02?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
     dbcp2:
@@ -78,7 +78,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: microservicecloud-config-dept-client-dept8001
-    prefer-ip-address: true   #显示ip地址
+    prefer-ip-address: true   #鏄剧ずip鍦板潃
 
 info:
   app.name: asiainfo-microservicecloud
